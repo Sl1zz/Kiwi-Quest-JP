@@ -1,1 +1,134 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kiwi-Quest-JP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/625434934e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html"><img src="images\logo.png" alt=""></a>
+        <div class="web-name">
+            <ul>
+                <li>KIWI-QUEST-JP</li>
+            </ul>
+        </div>
+        <div class="nav-links" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="checklist.html">Check List</a></li>
+                <li><a href="tips.html">Language And Tips</a></li>
+                <li class="dropdown">
+                    <a href="destinations.html" class="dropbtn">Destinations</a>
+                    <div class="dropdown-content">
+                        <a href="tokyo.html">Tokyo</a>
+                        <a href="kyoto.html">Kyoto</a>
+                        <a href="osaka.html">Osaka</a>
+                        <a href="nara.html">Nara</a>
+                        <a href="hiroshima.html">Hiroshima</a>
+                        <a href="hokkaido.html">Hokkaido</a>
+                    </div>
+                <li><a href="imageboard.html">Image Board</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+
+
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="text-box">
+            <h1>KIWI-QUEST-JP</h1>
+            <p>Discover everything you need to know to <br> organise your journey to Japan</p>
+            <div class="hero-btn-container">
+                <a href="checklist.html" class="hero-btn">THE ADVENTURE STARTS HERE!</a>
+            </div>
+        </div>
+
+        <div class="clock_box">
+            <h2> &nbsp; </h2>
+            <p>New Zealand (Wellington): <span class="clock" data-timezone="Pacific/Auckland"></span></p>
+            <h2> &nbsp; </h2>
+            <p>Japan (Tokyo): <span class="clock" data-timezone="Asia/Tokyo"></span></p>
+
+        </div>
+    </main>
+    <section class="scroll">
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <div class="image-container">
+                        <img src="images\shopally.png" alt="shops">
+                    </div>
+                    <h2> <strong></strong>Welcome to Kiwi-Quest-JP</strong></h2>
+                    <p>Are you a first-time traveler from New Zealand eager to explore the enchanting wonders of Japan?
+                        Look no further! <b>Kiwi-Quest-JP </b>is your gateway to an unforgettable adventure in the Land
+                        of the Rising Sun.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <div class="image-container">
+                        <img src="images\snowday.png" alt="Snow">
+                    </div>
+                    <p>Discover the ancient traditions, modern marvels, and breathtaking landscapes that Japan has to
+                        offer. Whether you're planning a solo expedition, a romantic getaway, or a family adventure,
+                        we're here to guide you through every step of your journey.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <div class="image-container">
+                        <img src="images\town.png" alt="town">
+                    </div>
+                    <p>From visa applications to cultural insights, packing tips to must-visit destinations, we've got
+                        you covered.<b> Kiwi-Quest-JP</b> is your one-stop resource for all the information and
+                        inspiration you need to make your dream trip to Japan a reality.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <div class="image-container">
+                        <img src="images\Monkey.png" alt="monkey">
+                    </div>
+                    <p>Get ready to embark on an exploration of Japan's rich history, vibrant culture, and stunning
+                        natural beauty. Let us be your travel companion on this incredible expedition. Start your
+                        journey today!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <a href="https://www.instagram.com/o0slizzed0o/?hl=en"><img src="images\logo-ig-png-32459.png"
+                alt="instagram"></a>
+        <p>©Steven Rogers</p>
+        <li><a href="privacypolicy.html">privacy policy</a></li>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>

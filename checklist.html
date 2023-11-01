@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checklist-Kiwi-Quest-JP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/625434934e.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+    <div class="checklistbg">
+        <nav>
+            <a href="index.html"><img src="images\logo.png" alt=""></a>
+            <div class="web-name">
+                <ul>
+                    <li>KIWI-QUEST-JP</li>
+                </ul>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="checklist.html">Check List</a></li>
+                    <li><a href="tips.html">Language And Tips</a></li>
+                    <li class="dropdown">
+                        <a href="destinations.html" class="dropbtn">Destinations</a>
+                        <div class="dropdown-content">
+                            <a href="tokyo.html">Tokyo</a>
+                            <a href="kyoto.html">Kyoto</a>
+                            <a href="osaka.html">Osaka</a>
+                            <a href="nara.html">Nara</a>
+                            <a href="hiroshima.html">Hiroshima</a>
+                            <a href="hokkaido.html">Hokkaido</a>
+                        </div>
+                    <li><a href="imageboard.html">Image Board</a></li>
+                    <li><a href="faqs.html">FAQ's</a></li>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <header>
+            <h2> &nbsp; </h2>
+        </header>
+        <div class="main-content">
+            <section>
+                <div class="itinerary">
+                    <h1> Itinerary</h1>
+                </div>
+                <div>
+                    <!-- Tab buttons -->
+                    <button class="tab-button active" onclick="showTab('week1')">1 Week</button>
+                    <button class="tab-button" onclick="showTab('week2')">2 Weeks</button>
+                    <button class="tab-button" onclick="showTab('week3')">3 Weeks</button>
+                </div>
+
+
+                <!-- Tab content for 1 Week -->
+                <div id="week1" class="tab-content" style="display: block;">
+                    <ul class="checkbox-list">
+                        <li><input type="checkbox" id="item1"> <label for="item1"><strong>Day 1 Arrive in
+                                    Tokyo</strong></label></li>
+                        <ul>
+                            <li>Arrive at Narita or Haneda International Airport in Tokyo.</li>
+                            <li>Check-in to your hotel and rest after your journey.</li>
+                            <li>Evening stroll around your hotel's neighborhood to get a taste of Tokyo's bustling
+                                atmosphere.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item2"> <label for="item2"><strong>Day 2: Explore
+                                    Tokyo</strong></label></li>
+                        <ul>
+                            <li>Start your day at Asakusa to visit Senso-ji Temple and Nakamise Shopping Street.</li>
+                            <li>Explore Ueno Park, home to several museums and the Ueno Zoo.</li>
+                            <li>Visit Akihabara, the electronics and anime district.</li>
+                            <li>Experience the vibrant nightlife in Shinjuku.</li>
+                        </ul>
+                        <li><input type="checkbox" id="itFem3"> <label for="item3"><strong>Day 3: Tokyo Disney Resort
+                                    (Optional)</strong></label></li>
+                        <ul>
+                            <li>Spend a day at Tokyo Disneyland or Tokyo DisneySea (if you're a Disney fan).</li>
+                            <li>Enjoy thrilling rides and entertainment shows.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item4"> <label for="item4"><strong>Day 4: Kyoto</strong></label>
+                        </li>
+                        <ul>
+                            <li>Take a Shinkansen (bullet train) to Kyoto.</li>
+                            <li>Visit Kinkaku-ji (Golden Pavilion) and Ryoan-ji Temple.</li>
+                            <li>Explore the historic Gion district in the evening, known for geisha culture.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item5"> <label for="item5"><strong>Day 5: Kyoto</strong></label>
+                        </li>
+                        <ul>
+                            <li>Visit Fushimi Inari Taisha, famous for its thousands of torii gates.</li>
+                            <li>Explore Arashiyama Bamboo Grove and the Monkey Park.</li>
+                            <li>Relax at a traditional tea house.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item6"> <label for="item6"><strong>Day 6: Hiroshima and Miyajima
+                                    Island</strong></label></li>
+                        <ul>
+                            <li>Take a day trip to Hiroshima to visit the Peace Memorial Park and Atomic Bomb Dome.</li>
+                            <li>In the afternoon, visit the picturesque Miyajima Island and its iconic floating torii
+                                gate.
+                            </li>
+                            <li>Return to Kyoto or stay overnight in Hiroshima.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item7"> <label for="item7"><strong>Day 7: Nara Day Trip and
+                                    Departure</strong></label></li>
+                        <ul>
+                            <li>Take a day trip to Nara to see the Todai-ji Temple and its giant Buddha statue.</li>
+                            <li>Explore Nara Park and feed the friendly deer.</li>
+                            <li>Return to Kyoto or head to Osaka to catch your flight home.</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <!-- Tab content for 2 Weeks -->
+                <div id="week2" class="tab-content">
+                    <ul class="checkbox-list">
+                        <li><input type="checkbox" id="item8"> <label for="item8"><strong>Day 8: Osaka</strong></label>
+                        </li>
+                        <ul>
+                            <li>Travel to Osaka, the "Kitchen of the Nation."</li>
+                            <li>Visit Osaka Castle and its beautiful park.</li>
+                            <li>Explore the Dotonbori entertainment district.</li>
+                            <li>Try local street food like takoyaki and okonomiyaki.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item9"> <label for="item9"><strong>Day 9: Himeji Day
+                                    Trip</strong></label></li>
+                        <ul>
+                            <li>Take a day trip to Himeji to visit Himeji Castle, a UNESCO World Heritage Site.</li>
+                            <li>Explore the beautiful gardens and structures within the castle complex.</li>
+                            <li>Return to Osaka in the evening.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item10"> <label for="item10"><strong>Day 10:
+                                    Kanazawa</strong></label></li>
+                        <ul>
+                            <li>Travel to Kanazawa, known for its well-preserved Edo-era districts.</li>
+                            <li>Visit Kenrokuen Garden, one of Japan's most beautiful gardens.</li>
+                            <li>Explore the Nagamachi samurai district.</li>
+                            <li>Enjoy local seafood at Omicho Market.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item11"> <label for="item11"><strong>Day 11:
+                                    Takayama</strong></label></li>
+                        <ul>
+                            <li>Head to Takayama, a charming mountain town known for its historic streets.</li>
+                            <li>Visit the morning market and sample local crafts.</li>
+                            <li>Explore the Sanmachi Suji old merchant district.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item12"> <label for="item12"><strong>Day 12:
+                                    Shirakawa-go</strong></label></li>
+                        <ul>
+                            <li>Take a day trip to the UNESCO-listed Shirakawa-go village.</li>
+                            <li>Admire the traditional thatched-roof farmhouses.</li>
+                            <li>Return to Takayama in the evening.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item13"> <label for="item13"><strong>Day 13: Kanazawa (Second
+                                    Visit)</strong>
+                            </label></li>
+                        <ul>
+                            <li>Return to Kanazawa for a second visit or explore any missed attractions.</li>
+                            <li>Consider visiting local museums or trying out gold leaf crafts.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item14"> <label for="item14"><strong>Day 14:
+                                    Nagoya</strong></label>
+                        </li>
+                        <ul>
+                            <li>Travel to Nagoya, Japan's fourth-largest city.</li>
+                            <li>Visit Nagoya Castle and its surrounding park.</li>
+                            <li>Explore the Osu Shopping District.</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <!-- Tab content for 3 Weeks -->
+                <div id="week3" class="tab-content">
+                    <ul class="checkbox-list">
+                        <li><input type="checkbox" id="item15"> <label for="item15"><strong>Day 15:
+                                    Nikko</strong></label>
+                        </li>
+                        <ul>
+                            <li>Travel to Nikko, famous for its beautiful temples and natural scenery.</li>
+                            <li>Visit Toshogu Shrine, a UNESCO World Heritage Site.</li>
+                            <li>Explore the picturesque Lake Chuzenji.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item16"> <label for="item16"><strong>Day 16:
+                                    Yokohama</strong></label></li>
+                        <ul>
+                            <li>Head to Yokohama, a vibrant port city near Tokyo.</li>
+                            <li>Visit the Sankeien Garden and Chinatown.</li>
+                            <li>Enjoy panoramic views from the Landmark Tower.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item17"> <label for="item17"><strong>Day 17: Kamakura Day
+                                    Trip</strong></label></li>
+                        <ul>
+                            <li>Take a day trip to Kamakura to visit the Great Buddha at Kotoku-in Temple.</li>
+                            <li>Explore Hase-dera Temple and its beautiful hydrangea garden (seasonal).</li>
+                            <li>Return to Yokohama or Tokyo in the evening.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item18"> <label for="item18"><strong>Day 18: Nikko (Second
+                                    Visit)</strong></label></li>
+                        <ul>
+                            <li>Return to Nikko for a second visit or explore any missed attractions.</li>
+                            <li>Consider hiking in the Nikko National Park if you enjoy outdoor activities.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item19"> <label for="item19"><strong>Day 19: Yokohama (Second
+                                    Visit)</strong></label></li>
+                        <ul>
+                            <li>Return to Yokohama for a second visit or explore any missed attractions.</li>
+                            <li>Consider visiting the Cup Noodles Museum or enjoying the local cuisine.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item20"> <label for="item20"><strong>Day 20: Free Day in
+                                    Tokyo</strong></label></li>
+                        <ul>
+                            <li>Use this day for any last-minute shopping, exploration, or relaxation in Tokyo.</li>
+                            <li>Explore Tokyo's vibrant neighborhoods, indulge in Japanese cuisine, or go shopping for
+                                souvenirs.</li>
+                            <li>Make the most of your remaining time in Tokyo before your departure.</li>
+                        </ul>
+                        <li><input type="checkbox" id="item21"> <label for="item21"><strong>Day 21:
+                                    Departure</strong></label></li>
+                        <ul>
+                            <li>Check out from your hotel in Tokyo.</li>
+                            <li>Depending on your flight schedule, you might have some time for last-minute activities
+                                or
+                                shopping.</li>
+                            <li>Head to Narita or Haneda International Airport for your return flight to New Zealand.
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="stack">
+                    <div class="top-content">
+                        <div class="mapembed">
+                            <div class="ifame-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414891.2624444961!2d139.7408639042861!3d35.66867888169417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd0365d6489%3A0x465a7d5114c2cf78!2sWeird%20vending%20machines!5e0!3m2!1sen!2snz!4v1697160843226!5m2!1sen!2snz"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guidecontent">
+                        <div class="guide">
+                            <h2>Guides and info</h2>
+                            <h3>Top 10 things to do from the itinerary</h3>
+                            <ul>
+                                <li>
+                                    <strong>Senso-ji Temple in Asakusa, Tokyo</strong>
+                                    <p>Senso-ji is Tokyo's oldest temple and one of its most significant. The
+                                        Kaminarimon
+                                        Gate, adorned with a massive red lantern, serves as the entrance to Nakamise
+                                        Shopping Street. This bustling street offers a wide array of traditional
+                                        Japanese
+                                        goods and street food. Beyond the gate, the temple itself is a place of
+                                        spiritual
+                                        reverence and beauty, making it a must-visit in Tokyo.</p>
+                                </li>
+                                <li>
+                                    <strong>Fushimi Inari Taisha in Kyoto</strong>
+                                    <p>Fushimi Inari Taisha is renowned for its thousands of vivid orange torii gates
+                                        that
+                                        create a stunning tunnel leading to the sacred Mount Inari. This place holds
+                                        immense
+                                        spiritual significance for the Japanese people, and it's a picturesque spot for
+                                        visitors. Don't miss the opportunity to hike to the summit for breathtaking
+                                        panoramic views of Kyoto and the surrounding landscapes.</p>
+                                </li>
+                                <li>
+                                    <strong>Miyajima Island near Hiroshima</strong>
+                                    <p>Miyajima Island is known for its iconic Itsukushima Shrine, with a floating torii
+                                        gate that appears to rest on the water during high tide. The island itself
+                                        offers
+                                        enchanting walking trails, friendly deer that roam freely, and delectable
+                                        grilled
+                                        oysters – a local specialty. It's a serene destination where nature and culture
+                                        harmoniously coexist.</p>
+                                </li>
+                                <li>
+                                    <strong>Osaka Castle in Osaka</strong>
+                                    <p>Osaka Castle is not just a historical site; it's a symbol of the city's rich
+                                        heritage. The castle is surrounded by a beautifully landscaped park, offering
+                                        visitors a glimpse into Japan's history and architectural prowess. Inside the
+                                        castle, a museum displays artifacts and information about its intriguing past.
+                                        The
+                                        surrounding park is an ideal place for picnics and leisurely strolls.</p>
+                                </li>
+                                <li>
+                                    <strong>Himeji Castle in Himeji</strong>
+                                    <p>Himeji Castle, often referred to as the White Heron Castle due to its striking
+                                        white
+                                        facade, is a UNESCO World Heritage Site and one of Japan's most iconic castles.
+                                        The
+                                        castle's intricate wooden structure and beautiful interior are a testament to
+                                        Japanese architecture and design. Climbing to the top provides a fantastic
+                                        vantage
+                                        point to appreciate the city's layout and history.</p>
+                                </li>
+                                <li>
+                                    <strong>Kinkaku-ji (Golden Pavilion) in Kyoto</strong>
+                                    <p>Kinkaku-ji, the Golden Pavilion, is a Zen Buddhist temple covered in gold leaf.
+                                        Its
+                                        reflection in the Mirror Pond creates a breathtaking sight, making it one of
+                                        Kyoto's
+                                        most celebrated landmarks. The surrounding gardens enhance the temple's tranquil
+                                        ambiance, making it an ideal spot for reflection and photography.</p>
+                                </li>
+                                <li>
+                                    <strong>Nara Park in Nara</strong>
+                                    <p>Nara Park is a unique destination famous for the hundreds of sacred deer that
+                                        roam
+                                        freely throughout the area. These deer are protected and cherished in the city.
+                                        While visiting, you can feed and interact with these friendly animals.
+                                        Additionally,
+                                        Nara Park is home to significant temples like Todai-ji, which houses the giant
+                                        Great
+                                        Buddha (Daibutsu).</p>
+                                </li>
+                                <li>
+                                    <strong>Toshogu Shrine in Nikko</strong>
+                                    <p>Toshogu Shrine in Nikko is a UNESCO World Heritage Site known for its intricate
+                                        carvings, lush natural surroundings, and historical significance. The shrine's
+                                        architectural details and serene atmosphere make it a cultural gem. Located
+                                        within
+                                        Nikko National Park, it offers a harmonious blend of culture and nature.</p>
+                                </li>
+                                <li>
+                                    <strong>Kanazawa's Kenrokuen Garden</strong>
+                                    <p>Kenrokuen Garden in Kanazawa is regarded as one of Japan's most exquisite
+                                        traditional
+                                        gardens. Its seasonal beauty captivates visitors throughout the year. The garden
+                                        exemplifies classic Japanese landscaping principles, offering a tranquil and
+                                        harmonious environment. Visiting Kenrokuen is an opportunity to immerse yourself
+                                        in
+                                        Japanese garden design and aesthetics.</p>
+                                </li>
+                                <li>
+                                    <strong>Arashiyama Bamboo Grove in Kyoto</strong>
+                                    <p>Arashiyama Bamboo Grove is a mesmerizing bamboo forest located in the district of
+                                        Arashiyama. This enchanting natural wonder is particularly captivating during
+                                        the
+                                        early morning and late afternoon, when the sunlight filters through the towering
+                                        bamboo shoots. Nearby, you'll find the Monkey Park where you can observe
+                                        Japanese
+                                        macaques, adding an extra layer of charm to the experience.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <button class="toggle-button" onclick="toggleGuideContent()">Guide Content</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/o0slizzed0o/?hl=en"><img src="images\logo-ig-png-32459.png"
+                alt="instagram"></a>
+        <p>©Steven Rogers</p>
+        <li><a href="privacypolicy.html">privacy policy</a></li>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

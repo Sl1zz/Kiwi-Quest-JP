@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ-Kiwi-Quest-JP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/625434934e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images\logo.png" alt=""></a>
+        <div class="web-name">
+            <ul>
+                <li>KIWI-QUEST-JP</li>
+            </ul>
+        </div>
+        <div class="nav-links" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="checklist.html">Check List</a></li>
+                <li><a href="tips.html">Language And Tips</a></li>
+                <li class="dropdown">
+                    <a href="destinations.html" class="dropbtn">Destinations</a>
+                    <div class="dropdown-content">
+                        <a href="tokyo.html">Tokyo</a>
+                        <a href="kyoto.html">Kyoto</a>
+                        <a href="osaka.html">Osaka</a>
+                        <a href="nara.html">Nara</a>
+                        <a href="hiroshima.html">Hiroshima</a>
+                        <a href="hokkaido.html">Hokkaido</a>
+                    </div>
+                <li><a href="imageboard.html">Image Board</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <header>
+        <h2> &nbsp; </h2>
+    </header>
+    <div class="faqbox">
+        <div class="faqpage">
+            <h1 class="centered-h1">FAQ</h1>
+            <h2>► Is Japan a safe destination for New Zealand travelers?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">Japan is generally considered a safe destination.
+                    The crime rate is low, and locals are very friendly and welcoming to tourists.
+                    However, like any other place, it's essential to stay vigilant and take common-sense
+                    precautions.</span>
+            </p>
+            <button onclick="readmore(1)" id="myBtn1">Read more</button>
+
+            <h2>► Do I need a visa to visit Japan as a New Zealander?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">New Zealand citizens don't need a visa to visit Japan for up to 90 days as tourists.
+                    You'll receive a temporary visitor visa upon arrival, provided you don't plan to work in Japan.
+                    Just ensure your passport remains valid throughout your stay.</span>
+            </p>
+            <button onclick="readmore(2)" id="myBtn2">Read more</button>
+
+            <h2>► What's the best time to visit Japan from New Zealand?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">The best time to visit Japan from New Zealand is during the spring (March to May) and
+                    autumn (September to November).
+                    These seasons offer pleasant weather and beautiful scenery.</span>
+            </p>
+            <button onclick="readmore(3)" id="myBtn3">Read more</button>
+
+            <h2>► What's the currency in Japan, and should I exchange currency before my trip?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">The currency in Japan is the Japanese Yen (JPY).
+                    It's recommended to exchange currency at the airport or local banks for competitive rates.</span>
+            </p>
+            <button onclick="readmore(4)" id="myBtn4">Read more</button>
+
+            <h2>► Do I need to learn Japanese before visiting Japan?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">While learning some basic Japanese phrases can be helpful and appreciated, many signs
+                    and menus in popular tourist areas are available in English. Most Japanese people in the tourist
+                    industry have some level of English proficiency.While learning some basic Japanese phrases can be
+                    helpful and appreciated, many signs and menus in popular tourist areas are available in English.
+                    Most Japanese people in the tourist industry have some level of English proficiency.</span>
+            </p>
+            <button onclick="readmore(5)" id="myBtn5">Read more</button>
+
+            <h2>► Can I use my New Zealand electrical devices in Japan?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">Japan uses a different type of power plug (Type A) than New Zealand (Type I). You'll
+                    need a plug adapter to use your New Zealand devices in Japan.
+                    The voltage is 100V in Japan, so ensure your devices are compatible.</span>
+            </p>
+            <button onclick="readmore(6)" id="myBtn6">Read more</button>
+
+            <h2>► What's the best way to get around Japan as a New Zealander tourist?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">Japan has an excellent and efficient public transportation system, including trains,
+                    buses, and subways. Consider purchasing a Japan Rail Pass if you plan to travel between cities.
+                    Local transportation within cities is also easy to use.</span>
+            </p>
+            <button onclick="readmore(7)" id="myBtn7">Read more</button>
+
+            <h2>► Is Wi-Fi readily available in Japan for New Zealand travelers?</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">Wi-Fi is widely available in Japan, including at airports, hotels, and many public
+                    places.
+                    You can also rent portable Wi-Fi devices, which are convenient for staying connected while
+                    traveling.</span>
+            </p>
+            <button onclick="readmore(8)" id="myBtn8">Read more</button>
+
+            <h2 class="contactcolour">► Contact me here for any more questions</h2>
+            <p>
+                <span class="dots"></span>
+                <span class="more">
+                    <div class="fcontainer" id="contactForm" style="display: none;">
+                        <h3>Contact Form</h3>
+                        <form id="myForm">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your email..">
+
+                            <label for="country">Country</label>
+                            <div class="autocomplete" style="width:100%;">
+                                <input id="myInput" type="text" name="myCountry" placeholder="Select your country">
+                            </div>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+
+                            <button type="button" id="submit1" onclick="showPopup()">Submit</button>
+                        </form>
+                    </div>
+                </span>
+            </p>
+            <button onclick="toggleForm()" id="myBtn9">Read more</button>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="popup-close" onclick="closePopup()">&times;</span>
+                    <p>Thanks for getting in contact, we will be in touch soon ♥</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.instagram.com/o0slizzed0o/?hl=en"><img src="images\logo-ig-png-32459.png"
+                alt="instagram"></a>
+        <p>©Steven Rogers</p>
+        <li><a href="privacypolicy.html">privacy policy</a></li>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
