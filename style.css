@@ -26,7 +26,7 @@ body {
 
 .checklistbg {
     background-image: url(images/White-cherry-blossums2.JPG);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
 }
@@ -347,7 +347,7 @@ nav img {
 }
 
 .container2 {
-    
+
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -473,7 +473,7 @@ header {
 .tab-content {
     display: none;
     padding: 10px;
-    
+
     border: 1px solid #ccc;
     background-color: #f8ebe3;
     font-family: 'Noto Sans JP', sans-serif;
@@ -918,7 +918,7 @@ footer {
     z-index: 1;
     margin-top: 10px;
     font-family: 'Noto Sans JP', sans-serif;
-    
+
 }
 
 
@@ -934,15 +934,15 @@ footer li {
 
 
 .policybox {
-    width: 50%; 
-    margin: 0 auto;     
-    padding: 20px; 
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #f8ebe3;
-    border: 1px solid #0f0202; 
+    border: 1px solid #0f0202;
     border-radius: 10px;
     box-shadow: #070101;
     font-family: 'Noto Sans JP', sans-serif;
-  }
+}
 
 .policybox h2 {
     text-align: center;
@@ -990,7 +990,7 @@ footer li {
 
 
 
- /*media for destnation options*/
+    /*media for destnation options*/
 
     .row {
         -webkit-flex-direction: column;
@@ -1044,6 +1044,24 @@ footer li {
     }
 
 
+    .container2::after {
+        content: none;
+    }
+
+    .left::before {
+        content: none;
+    }
+
+    .right::before {
+        content: none;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+
+
     /* move the clockbox*/
 
     .text-box {
@@ -1056,11 +1074,16 @@ footer li {
         left: 50%;
         transform: translateX(-50%);
         width: 80%;
+        height: 185px;
     }
-    
+
+    .clock_box h2 {
+        font-size: 0.8em;
+    }
+
 
     /*media for checklist */
-    
+
     .tab-content {
         width: 100%;
         float: none;
@@ -1092,7 +1115,7 @@ footer li {
     .stack {
         width: auto;
     }
-    
+
 
 
     .guidecontent.active {
@@ -1100,8 +1123,30 @@ footer li {
         width: 380%;
     }
 
+
+
+    /*image gallary*/
+    .image-gallery {
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .image-gallery img {
+        width: 100%;
+    }
+
+    .faqpage {
+        padding: 10px;
+
+    }
+
     /*footer*/
-    
+
     .footer {
         flex-direction: column;
         text-align: center;
@@ -1122,7 +1167,7 @@ footer li {
     }
 }
 
-    /*tips page*/
+/*tips page*/
 @media screen and (max-width: 700px) {
     .main-content {
         flex-direction: column;
@@ -1141,13 +1186,5 @@ footer li {
 
 }
 
-    /*media for imageboard*/
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-
-    .image-gallery img {
-        width: 100%;
-    }
-}
+/*media for imageboard*/
+@media only screen and (max-width: 700px) {}
