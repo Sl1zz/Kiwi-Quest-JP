@@ -473,7 +473,7 @@ header {
 .tab-content {
     display: none;
     padding: 10px;
-    margin-left: 10px;
+    
     border: 1px solid #ccc;
     background-color: #f8ebe3;
     font-family: 'Noto Sans JP', sans-serif;
@@ -484,7 +484,8 @@ header {
 }
 
 .tab-content ul {
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-right: 30px;
 }
 
 .checkbox-list {
@@ -524,7 +525,6 @@ header {
     border-radius: 15px;
     box-shadow: 0 2px 5px black;
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 10px;
 }
 
 .guide ul {
@@ -1114,8 +1114,8 @@ footer li {
     /*google maps*/
 
     .ifame-container iframe {
-        width: 400px;
-        height: 300px;
+        width: 290px;
+        height: 190px;
         src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.202662894291!2d139.76881557619737!3d35.696630129127186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd0365d6489%3A0x465a7d5114c2cf78!2sWeird%20vending%20machines!5e0!3m2!1sen!2snz!4v1697674934879!5m2!1sen!2snz";
         margin-left: 0%;
     }
