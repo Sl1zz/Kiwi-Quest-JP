@@ -703,7 +703,6 @@ input[type=text] {
 
 .column-left,
 .column-right {
-    flex: 1; 
     margin: 0 20px;
     border-width: 10px 10px 10px 0;
     border-radius: 10px;
@@ -748,7 +747,7 @@ input[type=text] {
 .youtube-embed {
     width: 100%;
     max-width: 100%;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .converter {
@@ -952,6 +951,8 @@ footer li {
 
 
 /*media*/
+
+/*nav*/
 @media(max-width: 600px) {
     .text-box h1 {
         font-size: 1.25em;
@@ -989,7 +990,7 @@ footer li {
 
 
 
-/*media for destnation options*/
+ /*media for destnation options*/
 
     .row {
         -webkit-flex-direction: column;
@@ -1136,7 +1137,6 @@ footer li {
     .youtube-embed iframe {
         height: auto;
         width: auto;
-        margin-left: 30px;
     }
 
 }
